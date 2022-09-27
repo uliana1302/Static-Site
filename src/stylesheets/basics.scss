@@ -1,0 +1,22 @@
+body {
+  // цвета прописывать только так
+  background: var(--light);
+}
+
+
+* {
+  // размер элемента по коробке, все паддинги внутрь
+  box-sizing: border-box;
+}
+
+html,
+body {
+  // когда контента мало, чтобы элементы можно было расположить норм (по центру, подвал книзу прибить)
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
