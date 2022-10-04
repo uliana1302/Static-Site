@@ -42,6 +42,17 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
       },
       {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          "style-loader",
+          // Translates CSS into CommonJS
+          "css-loader",
+          // Compiles Sass to CSS
+          "sass-loader",
+        ],
+      },
+      {
         test: /\.css$/i,
         use: [
           MiniCssExtractPlugin.loader,
@@ -80,7 +91,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(ttf|otf)$/i,
+        test: /\.(ttf|otf|woff|woff2)$/i,
         loader: 'file-loader',
         options: {
           name: 'fonts/[name].[ext]'

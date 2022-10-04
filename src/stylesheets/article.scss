@@ -1,7 +1,86 @@
-// переписать оформление с начала страницы из википедии
+// body.article {
+//   font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+//   font-weight: 400;
+//
+//
+//   article {
+//     width: 600px;
+//     margin: 0 auto;
+//
+//   h1, h2, h3 {
+//     font-weight: normal;
+//   }
+//   h1 {
+//     margin-top: 30px;
+//     font-size: 36px;
+//   }
+//   h2 {
+//     margin-top: 20px;
+//     font-size: 28px;
+//   }
+//   h3 {
+//     margin-top: 16px;
+//     font-size: 22px;
+//   }
+//   p, ul {
+//     margin-top: 16px;
+//     font-size: 16px;
+//     line-height: 1.4;
+//   }
+//   ul {
+//     list-style: disc;
+//     padding-left: 20px;
+//   }
+//   li {
+//     margin-top: 8px;
+//   }
+//   p.lead {
+//     text-transform: uppercase;
+//     font-size: 28px;
+//     font-weight: 700;
+//     text-align: center;
+//     width: 400px;
+//     margin: 40px auto;
+//   }
+//   blockquote {
+//     background: var(--light);
+//     padding: 20px;
+//     margin-top: 16px;
+//
+//     p {
+//       font-style: italic;
+//
+//       &:first-child {
+//         margin: 0;
+//       }
+//     }
+//
+//       cite {
+//         display: block;
+//         font-size: 14px;
+//         margin-top: 16px;
+//         text-align: right;
+//       }
+//     }
+//     img {
+//       width: 100%;
+//       margin-top: 16px;
+//     }
+//
+//     figcaption {
+//       width: 80%;
+//       margin: 10px auto 0;
+//       text-align: center;
+//       color: var(--middle);
+//     }
+//
+//   }
+// }
+
 
 body.article {
-  background: var(--dark);
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 400;
 }
 
 article {
@@ -9,11 +88,6 @@ article {
   margin: 0 auto;
   background: var(--white);
 }
-
-article>* {
-  margin: 10px;
-}
-
 h1, h2, h3 {
   font-weight: normal;
 }
@@ -27,22 +101,52 @@ h2 {
 }
 h3 {
   margin-top: 16px;
-  font-size: 20px;
+  font-size: 22px;
 }
-p {
+p, ul {
   margin-top: 16px;
   font-size: 16px;
   line-height: 1.4;
 }
-
-body {
-  margin: 0;
-  &:first-child {
-    font-size: 12px;
-  }
+ul {
+  list-style: disc;
+  padding-left: 20px;
 }
-
+li {
+  margin-top: 8px;
+}
+p.lead {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  width: 400px;
+  margin: 40px auto;
+}
+blockquote {
+  background: var(--light);
+  padding: 20px;
+  margin-top: 16px;
+}
+p {
+  font-style: italic;
+}
+p:first-child {
+  margin: 0;
+}
+cite {
+  display: block;
+  font-size: 14px;
+  margin-top: 16px;
+  text-align: right;
+}
 img {
   width: 100%;
-  margin: 0 auto;
+  margin-top: 16px;
+}
+figcaption {
+  width: 80%;
+  margin: 10px auto 0;
+  text-align: center;
+  color: var(--middle);
 }
